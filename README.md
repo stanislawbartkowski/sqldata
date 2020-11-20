@@ -11,7 +11,7 @@ Connect to DB2 database
 
 ## Create tables
 
-> db2 -tvf db2tables.sql
+> db2 -tsvf db2tables.sql
 
 Verify<br>
 
@@ -32,7 +32,7 @@ SAVINGS_ACCOUNTS                DB2INST1        T     2020-11-20-19.42.43.532879
 
 ## Remove tables
 
-> db2 -tvf db2droptables.sql<br>
+> db2 -tsvf db2droptables.sql<br>
 
 Verify<br>
 
@@ -45,3 +45,7 @@ Table/View                      Schema          Type  Creation time
 
   0 record(s) selected.
 ```
+
+## Load data
+
+> db2 -tsvf db2insert.sql<br>
