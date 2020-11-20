@@ -19,19 +19,15 @@ Verify<br>
 ```
 Table/View                      Schema          Type  Creation time             
 ------------------------------- --------------- ----- --------------------------
-ACCOUNT_HOLDERS                 DB2INST1        T     2020-11-20-18.58.53.570504
-BANK_ACCOUNTS                   DB2INST1        T     2020-11-20-18.58.53.809655
-BANK_CLIENTS                    DB2INST1        T     2020-11-20-18.58.53.010737
-BANK_CUSTOMERS                  DB2INST1        T     2020-11-20-18.58.54.396832
-BANK_WRKEX_SALARY               DB2INST1        T     2020-11-20-18.58.54.634787
-CHECKING_ACCOUNTS               DB2INST1        T     2020-11-20-18.58.54.881117
-MORTGAGE_CUSTOMER               DB2INST1        T     2020-11-20-18.58.52.049126
-MORTGAGE_DEFAULT                DB2INST1        T     2020-11-20-18.58.52.278320
-MORTGAGE_JOIN                   DB2INST1        T     2020-11-20-18.58.52.518098
-MORTGAGE_PROPERTY               DB2INST1        T     2020-11-20-18.58.52.766087
-SAVINGS_ACCOUNTS                DB2INST1        T     2020-11-20-18.58.55.119853
+ACCOUNT_HOLDERS                 DB2INST1        T     2020-11-20-19.42.42.177249
+BANK_ACCOUNTS                   DB2INST1        T     2020-11-20-19.42.42.457481
+BANK_CLIENTS                    DB2INST1        T     2020-11-20-19.42.41.517832
+BANK_CUSTOMERS                  DB2INST1        T     2020-11-20-19.42.42.737915
+BANK_WRKEX_SALARY               DB2INST1        T     2020-11-20-19.42.43.013272
+CHECKING_ACCOUNTS               DB2INST1        T     2020-11-20-19.42.43.267106
+SAVINGS_ACCOUNTS                DB2INST1        T     2020-11-20-19.42.43.532879
 
-  11 record(s) selected.
+  7 record(s) selected.
 ```
 
 ## Remove tables
