@@ -65,6 +65,23 @@ Collect data.
 
 ## Create tables
 
-Example:<br>
+Define tables as CSV files.<br>
 
->  beeline -u "jdbc:hive2://banquets1.fyre.ibm.com:2181,sawtooth1.fyre.ibm.com:2181,sawtooth2.fyre.ibm.com:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2" -n sb -f db2tables.sql
+> sed "s/;/ ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' stored as textfile;/g" db2tables.sql  >hivetable.sql<br>
+>  beeline -u "jdbc:hive2://banquets1.fyre.ibm.com:2181,sawtooth1.fyre.ibm.com:2181,sawtooth2.fyre.ibm.com:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2" -n sb -f hivetable.sql <br>
+
+## Load data
+
+Copy data to HDFS /tmp directory.<br>
+
+> hdfs dfs -copyFromLocal data/* /tmp
+
+Load data.<br>
+
+>  beeline -u "jdbc:hive2://banquets1.fyre.ibm.com:2181,sawtooth1.fyre.ibm.com:2181,sawtooth2.fyre.ibm.com:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2" -n sb -f hiveinsert.sql
+
+If loading is successful, the files are remove from */tmp* location.
+
+## Remove data
+
+> beeline -u "jdbc:hive2://banquets1.fyre.ibm.com:2181,sawtooth1.fyre.ibm.com:2181,sawtooth2.fyre.ibm.com:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2" -n sb -f db2droptables.sql 
