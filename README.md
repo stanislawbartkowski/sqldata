@@ -11,7 +11,8 @@ Connect to DB2 database
 
 ## Create tables
 
-> db2 -tsvf db2tables.sql
+> db2 -tsvf db2tables.sql<br>
+> db2 -tsvf db2indexes.sql 
 
 Verify<br>
 
