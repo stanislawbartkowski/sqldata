@@ -1,4 +1,0 @@
-#Wed Dec 30 23:42:50 CET 2020
-ConnectionName=dbaudit
-useridCurrentSchema=false
-ProjectAnnotation=dbaudit\:jdbc\:db2\://db1.sb.com\:50000/dbaudit\:retrieveMessagesFromServerOnGetMessage\=true;
