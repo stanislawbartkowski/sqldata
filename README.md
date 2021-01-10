@@ -53,6 +53,8 @@ Table/View                      Schema          Type  Creation time
 
 # HIVE
  
+## Connect data
+
 Collect data.
 
 | Data | Sample value |
@@ -60,3 +62,9 @@ Collect data.
 | URL | URL string to connect to Hive2 server | jdbc:hive2://banquets1.fyre.ibm.com:2181,sawtooth1.fyre.ibm.com:2181,sawtooth2.fyre.ibm.com:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2
 | Hive database | testdb
 | Hive user | sb
+
+## Create tables
+
+Example:<br>
+
+>  beeline -u "jdbc:hive2://banquets1.fyre.ibm.com:2181,sawtooth1.fyre.ibm.com:2181,sawtooth2.fyre.ibm.com:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2" -n sb -f db2tables.sql
