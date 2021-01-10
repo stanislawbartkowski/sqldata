@@ -50,3 +50,13 @@ Table/View                      Schema          Type  Creation time
 ## Load data
 
 > db2 -tsvf db2insert.sql<br>
+
+# HIVE
+ 
+Collect data.
+
+| Data | Sample value |
+| -- | -- |
+| URL | URL string to connect to Hive2 server | jdbc:hive2://banquets1.fyre.ibm.com:2181,sawtooth1.fyre.ibm.com:2181,sawtooth2.fyre.ibm.com:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2
+| Hive database | testdb
+| Hive user | sb
