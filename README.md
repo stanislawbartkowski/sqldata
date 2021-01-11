@@ -59,7 +59,7 @@ Collect data.
 
 | Data | Sample value |
 | -- | -- |
-| URL string to connect to Hive2 server | jdbc:hive2://.............:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2
+| URL string to connect to Hive2 server | jdbc:hive2://{..}:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2
 | Hive database | testdb
 | Hive user | sb
 
