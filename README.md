@@ -68,6 +68,7 @@ Collect data.
 Define tables as CSV files.<br>
 
 > sed "s/;/ ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' stored as textfile;/g" db2tables.sql  >hivetable.sql<br>
+
 >  beeline -u "jdbc:hive2://banquets1.fyre.ibm.com:2181,sawtooth1.fyre.ibm.com:2181,sawtooth2.fyre.ibm.com:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2" -n sb -f hivetable.sql <br>
 
 ## Load data
