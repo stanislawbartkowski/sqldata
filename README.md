@@ -81,7 +81,7 @@ Load data.<br>
 
 >  beeline -u "jdbc:hive2://banquets1.fyre.ibm.com:2181,sawtooth1.fyre.ibm.com:2181,sawtooth2.fyre.ibm.com:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2" -n sb -f hiveinsert.sql
 
-If loading is successful, the files are remove from */tmp* location.
+If loading is successful, the files are removed from HFDS */tmp* location.
 
 ## Remove data
 
