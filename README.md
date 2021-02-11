@@ -73,10 +73,17 @@ Define tables as CSV files.<br>
 
 ## Load data
 
-Copy data to HDFS /tmp directory.<br>
+Copy data to HDFS /tmp/sqldata directory. Create subdirectory to avoid *sticky bt* problem in CDP.<br>
 
 > hdfs dfs -mkdir /tmp/sqldata<br>
 > hdfs dfs -copyFromLocal data/* /tmp/sqldata<br>
+> hdfs dfs -chmod -R 777 /tmp/sqldata<br>
+
+Give the user, here *sb*, access to Hive database, here user *sb and *testdb* database.
+
+(as HDFS superuser)<br>
+
+> hdfs dfs -setfacl -m user:sb:rwx /warehouse/tablespace/managed/hive/testdb.db/<br>
 
 Load data.<br>
 
