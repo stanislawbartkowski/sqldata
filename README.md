@@ -76,7 +76,7 @@ Define tables as CSV files.<br>
 Copy data to HDFS /tmp directory.<br>
 
 > hdfs dfs -mkdir /tmp/sqldata<br>
-> hdfs dfs -copyFromLocal data/* /tmp/sqladata<br>
+> hdfs dfs -copyFromLocal data/* /tmp/sqldata<br>
 
 Load data.<br>
 
