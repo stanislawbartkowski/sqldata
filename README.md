@@ -79,7 +79,7 @@ Copy data to HDFS /tmp/sqldata directory. Create subdirectory to avoid *sticky b
 > hdfs dfs -copyFromLocal data/* /tmp/sqldata<br>
 > hdfs dfs -chmod -R 777 /tmp/sqldata<br>
 
-Give the user, here *sb*, access to Hive database, here user *sb and *testdb* database.
+Give the user, here *sb*, access to Hive database, here user *sb* and *testdb* database.
 
 (as HDFS superuser)<br>
 
