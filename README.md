@@ -86,3 +86,17 @@ If loading is successful, the files are removed from HFDS */tmp* location.
 ## Remove data
 
 > beeline -u "jdbc:hive2://banquets1.fyre.ibm.com:2181,sawtooth1.fyre.ibm.com:2181,sawtooth2.fyre.ibm.com:2181/testdb;serviceDiscoveryMode=zooKeeper;zooKeeperNamespace=hiveserver2" -n sb -f db2droptables.sql 
+
+# Catalog remote connection
+
+*icat.sh* <br>
+
+Simple script to catalog remote node and database.<br>
+
+Example:<br>
+
+> ./icat.sh DB2NODE db1.sb.com SAMPLE
+
+Replaces two commands<br>
+> db2 catalog tcpip node DB2NODE remote db1.sb.com server 50000<br>
+> db2 catalog database SAMPLE st node DB2NODE<br>
