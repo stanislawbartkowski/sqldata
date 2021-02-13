@@ -117,3 +117,10 @@ Assuming the following connection command: *psql -h brunette-inf -U redhat persi
 Create database schema.<br>
 > psql -h brunette-inf -U redhat persistentdb < db2tables.sql <br>
 > psql -h brunette-inf -U redhat persistentdb < db2indexes.sql <br>
+
+Load data.<br>
+> psql -h brunette-inf -U redhat persistentdb < postinsert.sql<br>
+
+Remove data.<br>
+
+> psql -h brunette-inf -U redhat persistentdb < db2droptables.sql
