@@ -108,3 +108,11 @@ Example:<br>
 Replaces two commands<br>
 > db2 catalog tcpip node DB2NODE remote db1.sb.com server 50000<br>
 > db2 catalog database SAMPLE st node DB2NODE<br>
+
+
+# PostgreSQL
+
+Assuming the following connection command: *psql -h brunette-inf -U redhat persistentdb*
+
+Create database schema.<br>
+>  psql -h brunette-inf -U redhat persistentdb < db2tables.sql
