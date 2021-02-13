@@ -115,4 +115,5 @@ Replaces two commands<br>
 Assuming the following connection command: *psql -h brunette-inf -U redhat persistentdb*
 
 Create database schema.<br>
->  psql -h brunette-inf -U redhat persistentdb < db2tables.sql
+> psql -h brunette-inf -U redhat persistentdb < db2tables.sql <br>
+> psql -h brunette-inf -U redhat persistentdb < db2indexes.sql <br>
